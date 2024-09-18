@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  background: linear-gradient(#ff9900, #ee5599);
+}
+
+h1 {
+  font-size: 35px;
+}
+
+html {
+  font-family: "Chakra Petch", sans-serif;
+}
+input {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 40px;
+  animation: bnt 2.2s linear infinite;
+  box-shadow: 8px 4px 6px rgb(45, 50, 52);
+  background: linear-gradient(90deg, #e53369 0%, #daae51 100%);
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+@keyframes bnt {
+  0% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(-15deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  35% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 490px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .inputs input{
+    margin-bottom: 20px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
